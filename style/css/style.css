@@ -654,6 +654,13 @@ button.inactive {
 .right__side .input__text .input__div span {
   color: #aaa;
 }
+.right__side .input__text .input__div1 {
+  width: 17%;
+  position: relative;
+}
+.right__side .input__text .input__div1 span {
+  color: #aaa;
+}
 .right__side .input__text input[type=text],
 .right__side .input__text input[type=date],
 .right__side .input__text select {
@@ -668,26 +675,21 @@ button.inactive {
   padding: 0px 10px;
   color: #333;
 }
-.right__side .input__text input[type=text]::placeholder,
-.right__side .input__text input[type=date]::placeholder,
-.right__side .input__text select::placeholder {
+.right__side .input__text input[type=text]::placeholder {
   color: hsl(0, 100%, 99%);
 }
-.right__side .input__text input[type=text]:focus,
-.right__side .input__text input[type=date]:focus,
-.right__side .input__text select:focus {
-  outline: 0;
-  box-shadow: 0 0 0 1px #399;
-}
-.right__side .input__text input[type=text]:valid ~ span, .right__side .input__text input[type=text]:not(:placeholder-shown) ~ span,
-.right__side .input__text input[type=date]:valid ~ span,
-.right__side .input__text input[type=date]:not(:placeholder-shown) ~ span,
-.right__side .input__text select:valid ~ span,
-.right__side .input__text select:not(:placeholder-shown) ~ span {
+.right__side .input__text input:focus ~ span,
+.right__side .input__text input:valid ~ span,
+.right__side .input__text input[type=text]:not(:placeholder-shown) ~ span {
   top: -15px;
   left: 6px;
   font-size: 10px;
   font-weight: 600;
+}
+.right__side .input__text span {
+  top: -15px;
+  left: 6px;
+  font-size: 10px;
 }
 .right__side .input__text input[type=date]:required:invalid::-webkit-datetime-edit {
   color: transparent;
@@ -702,6 +704,14 @@ button.inactive {
   color: black;
 }
 .right__side .input__text .input__div span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+.right__side .input__text .input__div1 span {
   position: absolute;
   top: 10px;
   left: 10px;

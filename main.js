@@ -200,3 +200,21 @@ if(createsub != null)
         }
     }
 
+/*=============== COPYING ADDRESS BY CHECKBOX ===============*/
+let SameAs = document.getElementById("SameAs")
+let Address1 = document.getElementById("Address1")
+let Address2 = document.getElementById("Address2")
+let MailAddress1 = document.getElementById("MailAddress1")
+let MailAddress2 = document.getElementById("MailAddress2")
+
+    SameAs.onclick = function(){   
+        if (SameAs = true){
+            document.getElementById('MailAddress1').value=document.getElementById('Address1').value;
+            document.getElementById('MailAddress2').value=document.getElementById('Address2').value;
+        }
+        else{
+            document.getElementById('MailAddress1').value="";
+            document.getElementById('MailAddress2').value="";
+        }
+        
+    }
